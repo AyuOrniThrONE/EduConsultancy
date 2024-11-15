@@ -1,0 +1,5 @@
+package com.example.UserAuthModule.security;
+
+public class WebSecurityConfig {
+
+}

@@ -1,0 +1,5 @@
+package com.example.UserAuthModule.controller;
+
+public class ContactController {
+
+}

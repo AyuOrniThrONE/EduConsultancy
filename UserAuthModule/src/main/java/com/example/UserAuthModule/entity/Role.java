@@ -1,0 +1,29 @@
+package com.example.UserAuthModule.entity;
+
+import javax.persistence.*;
+
+@Entity
+public class Role {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    
+
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private ERole name;
+    private String roles=name.toString();
+	public Role(String roles) {
+		super();
+		this.roles = roles;
+	}
+	public String getRoles() {
+		return roles;
+	}
+	public void setRoles(String roles) {
+		this.roles = roles;
+	}
+    
+    // getters and setters
+    
+}

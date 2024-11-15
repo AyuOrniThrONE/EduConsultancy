@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
+    <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.RoleRepository"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.entity.User"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.entity.ERole"/>
+    <fullyQualifiedTypeName name="javax.management.relation.Role"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.service.UserService"/>
+</qualifiedTypeNameHistroy>
