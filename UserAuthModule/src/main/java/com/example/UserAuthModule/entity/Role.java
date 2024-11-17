@@ -1,29 +1,43 @@
 package com.example.UserAuthModule.entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Role {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
+    @NotBlank(message = "Role name is required")
+    private String name;
 
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20)
-    private ERole name;
-    private String roles=name.toString();
-	public Role(String roles) {
+
+
+	public Role(@NotBlank(message = "Role name is required") String name) {
 		super();
-		this.roles = roles;
+		this.name = name;
 	}
-	public String getRoles() {
-		return roles;
+
+	public Integer getId() {
+		return id;
 	}
-	public void setRoles(String roles) {
-		this.roles = roles;
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
-    
-    // getters and setters
-    
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+    // Getters and setters omitted for brevity
 }

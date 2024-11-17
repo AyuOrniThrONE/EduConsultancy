@@ -2,3 +2,7 @@
 1731671194912	Encapsulate field 'enabled'
 1731672983789	Rename compilation unit 'WebSecurityConfig.java'
 1731673392785	Delete element
+1731679420709	Rename package 'com.example.UserAuthModule.main'
+1731679511903	Delete element
+1731682198013	Delete element
+1731682216911	Rename type 'ERole'

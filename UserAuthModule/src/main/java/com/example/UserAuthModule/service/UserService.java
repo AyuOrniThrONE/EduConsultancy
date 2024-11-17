@@ -1,18 +1,17 @@
 package com.example.UserAuthModule.service;
 
-import com.example.UserAuthModule.entity.Role;
 
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.UserAuthModule.entity.ERole;
+import com.example.UserAuthModule.entity.Role;
 import com.example.UserAuthModule.entity.User;
 import com.example.UserAuthModule.entity.VerificationToken;
-import com.example.UserAuthModule.repository.RoleRepository;
 import com.example.UserAuthModule.repository.UserRepository;
 import com.example.UserAuthModule.repository.VerificationTokenRepository;
 

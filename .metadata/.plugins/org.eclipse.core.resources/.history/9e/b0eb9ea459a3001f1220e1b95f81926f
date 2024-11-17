@@ -1,0 +1,6 @@
+package com.example.UserAuthModule.main;
+
+@SpringBootApplication
+public class MainApp {
+
+}
