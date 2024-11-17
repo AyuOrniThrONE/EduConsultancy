@@ -1,0 +1,5 @@
+package com.example.UserAuthModule.config;
+
+public class SignupRequest {
+
+}

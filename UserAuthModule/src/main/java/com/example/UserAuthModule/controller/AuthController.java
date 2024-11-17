@@ -1,8 +1,11 @@
 package com.example.UserAuthModule.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.UserAuthModule.config.LoginRequest;
+import com.example.UserAuthModule.config.SignupRequest;
 import com.example.UserAuthModule.entity.User;
 import com.example.UserAuthModule.entity.VerificationToken;
 import com.example.UserAuthModule.repository.UserRepository;
@@ -27,22 +30,14 @@ public class AuthController {
     private UserRepository userRepository;
 
     @PostMapping("/register")
-    public String registerUser(@RequestBody User user) {
-        User registeredUser = userService.registerNewUser(user);
-        String token = userService.generateVerificationToken(registeredUser);
-        emailService.sendVerificationEmail(registeredUser.getEmail(), token);
-        return "Registration successful. Please check your email to verify your account.";
+    public ResponseEntity<String> registerUser(@RequestBody SignupRequest request) {
+        userService.registerUser(request);
+        return ResponseEntity.ok("Registration successful.");
     }
 
-    @GetMapping("/verify")
-    public String verifyAccount(@RequestParam("token") String token) {
-        VerificationToken verificationToken = tokenRepository.findByToken(token);
-        if (verificationToken == null) {
-            return "Invalid verification token";
-        }
-        User user = verificationToken.getUser();
-        user.setEnabled(true);
-        userRepository.save(user);
-        return "Account verified successfully";
+    @GetMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginRequest request){
+        return ResponseEntity.ok("Registration successful.");
     }
+    
 }

@@ -1,8 +1,11 @@
 package com.example.UserAuthModule.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.UserAuthModule.entity.ERole;
 import com.example.UserAuthModule.entity.Role;
 import com.example.UserAuthModule.repository.RoleRepository;
 
@@ -28,7 +31,7 @@ public class RoleService {
         }
     }
 
-    public Role findByName(String name) {
+    public Optional<Role> findByName(String name) {
         return roleRepository.findByName(name);
     }
 }

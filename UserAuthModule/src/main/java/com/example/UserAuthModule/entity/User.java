@@ -1,9 +1,12 @@
 package com.example.UserAuthModule.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+
 import java.util.Set;
 
 @Entity
+@Table(name="users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -11,19 +14,18 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private String profilePicture;
 
-    @Enumerated(EnumType.STRING)
-    private ERole role;
-    public ERole getRole() {
+    @ManyToOne
+    private Role role;
+    public Role getRole() {
 		return role;
 	}
 
-	public void setRole(ERole roleUser) {
-		this.role = roleUser;
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
-	private boolean enabled;
+//	private boolean enabled;
     // getters and setters
 
 	public String getUsername() {
@@ -38,8 +40,8 @@ public class User {
 		return email;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String string) {
+		this.email = string;
 	}
 
 	public String getPassword() {
@@ -50,19 +52,19 @@ public class User {
 		this.password = password;
 	}
 
-	public String getProfilePicture() {
-		return profilePicture;
-	}
-
-	public void setProfilePicture(String profilePicture) {
-		this.profilePicture = profilePicture;
-	}
-
-	public boolean isEnabled() {
-		return enabled;
-	}
-
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
+//	public String getProfilePicture() {
+//		return profilePicture;
+//	}
+//
+//	public void setProfilePicture(String profilePicture) {
+//		this.profilePicture = profilePicture;
+//	}
+//
+//	public boolean isEnabled() {
+//		return enabled;
+//	}
+//
+//	public void setEnabled(boolean enabled) {
+//		this.enabled = enabled;
 }
+

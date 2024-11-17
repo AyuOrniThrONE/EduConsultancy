@@ -1,0 +1,70 @@
+package com.example.UserAuthModule.entity;
+
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+
+import java.util.Set;
+
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String username;
+    private Email email;
+    private String password;
+    private String profilePicture;
+
+    @Enumerated(EnumType.STRING)
+    private ERole role;
+    public ERole getRole() {
+		return role;
+	}
+
+	public void setRole(ERole roleUser) {
+		this.role = roleUser;
+	}
+
+	private boolean enabled;
+    // getters and setters
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getEmail() {
+		return email.toString();
+	}
+
+	public void setEmail(String email) {
+		this.email = email.toString();
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getProfilePicture() {
+		return profilePicture;
+	}
+
+	public void setProfilePicture(String profilePicture) {
+		this.profilePicture = profilePicture;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+}

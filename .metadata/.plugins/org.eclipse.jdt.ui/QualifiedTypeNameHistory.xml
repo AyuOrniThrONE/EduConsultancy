@@ -3,11 +3,9 @@
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents"/>
-    <fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
     <fullyQualifiedTypeName name="javax.management.relation.Role"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration"/>
     <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.ContactRepository"/>
-    <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.RoleRepository"/>
     <fullyQualifiedTypeName name="com.example.UserAuthModule.entity.Role"/>
     <fullyQualifiedTypeName name="com.example.UserAuthModule.service.ContactService"/>
     <fullyQualifiedTypeName name="com.example.UserAuthModule.entity.Contact"/>
@@ -22,5 +20,14 @@
     <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.UserRepository"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.Email"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.repository.RoleRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
     <fullyQualifiedTypeName name="com.example.UserAuthModule.entity.ERole"/>
+    <fullyQualifiedTypeName name="com.example.UserAuthModule.config.SignupRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
 </qualifiedTypeNameHistroy>
