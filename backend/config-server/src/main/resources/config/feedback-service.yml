@@ -6,8 +6,8 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/feedback_db
-    username: root
-    password: root
+    username: ayush
+    password: Ayushpt@2024
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
