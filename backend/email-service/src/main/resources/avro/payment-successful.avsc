@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "PaymentSuccessfulEvent",
+  "namespace": "com.pol.payment_service.schema.avro",
+  "fields": [
+       { "name": "email", "type": "string" },
+       { "name": "username", "type": "string" },
+       { "name": "sub", "type": "string" },
+       { "name": "paymentId", "type": "string" },
+       { "name": "productId", "type": "string" },
+       { "name": "orderId", "type": "string" }
+  ]
+}

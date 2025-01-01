@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "UserRegisteredEvent",
+  "namespace": "com.pol.user_service.schema.avro",
+  "fields": [
+    { "name": "name", "type": "string" },
+    { "name": "email", "type": "string" }
+  ]
+}

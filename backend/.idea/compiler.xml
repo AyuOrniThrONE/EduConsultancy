@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="payment-service" />
+        <module name="email-service" />
+        <module name="api-gateway" />
+        <module name="product-service" />
+        <module name="user-service" />
+        <module name="blog-service" />
+        <module name="service-registry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="openfeign-produces" target="23" />
+      <module name="openfeign-test" target="23" />
+      <module name="shared-events" target="23" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="blog-service" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="email-service" options="-parameters" />
+      <module name="openfeign-produces" options="-parameters" />
+      <module name="openfeign-test" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="service-registry" options="-parameters" />
+      <module name="shared-events" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
